@@ -57,8 +57,6 @@
 
 # Author : 
 
-![Imagen]('https://www.facebook.com/photo?fbid=2571024993180559&set=a.1433449050271498')
-
 ## [David Prada Linarez]('https://github.com/davichois')
 
 @davichois
