@@ -1,0 +1,10 @@
+{
+  "nombre": "Api de registracion y logueo",
+  "configDB": {
+    "HOST": "mongodb://localhost/Api-Login",
+    "PORT": 3000
+  },
+  "keys": {
+    "JWT-KEY": "secret"
+  }
+}
