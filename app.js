@@ -3,6 +3,7 @@ const cors = require("cors");
 const config = require("config");
 const auth = require("./components/auth/authRoutes");
 const user = require("./components/user/userRoutes");
+const errors = require("./network/errors");
 
 const app = express();
 
@@ -21,5 +22,7 @@ app.get("/api", (req, res) => {
     AUTH: `http://localhost:${config.get("configDB.PORT")}/api/auth`,
   });
 });
+
+app.use(errors);
 
 module.exports = app;

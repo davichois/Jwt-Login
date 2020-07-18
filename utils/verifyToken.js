@@ -1,6 +1,7 @@
 const jwt = require("jsonwebtoken");
 const config = require("config");
-const response = require("../network/response");
+// const response = require("../network/response");
+const error = require("../utils/err");
 
 function signToken(data) {
   const resultado = jwt.sign({ id: data }, config.get("keys.JWT-KEY"));
@@ -10,7 +11,8 @@ function signToken(data) {
 function verifyToken(req, res, next) {
   const token = req.headers["token"];
   if (!token) {
-    response.error(req, res, "No provide Token", 401, "Error del VERIFY/TOKEN");
+    // response.error(req, res, "No provide Token", 401, "Error del VERIFY/TOKEN");
+    throw new error("No provide Token ", 401, "errorrr");
   }
   const decoded = jwt.verify(token, config.get("keys.JWT-KEY"));
   req.userId = decoded.id;

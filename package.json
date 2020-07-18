@@ -1,7 +1,7 @@
 {
   "name": "apilogin",
   "version": "1.0.0",
-  "description": "",
+  "description": "Esta es API de un login hecha con JWT.",
   "main": "index.js",
   "scripts": {
     "start": "NODE_ENV=production node index.js",
