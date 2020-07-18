@@ -1,8 +1,8 @@
 # API LOGIN (JWT)
 
-### Esta es una API de login usando JWT.
+## Esta es una API de login usando JWT.
 
-## ENDPOINT : 
+## ENDPOINT :
 
 | POINT           | HTTP   | COMENTARIO                                                                         |
 | --------------- | ------ | ---------------------------------------------------------------------------------- |
@@ -16,47 +16,84 @@
 
 ## ESPECIFICACIONES :
 
-### USUARIO : 
+### USUARIO :
 
 > #### GET/ :
->>####  Este te muestra todos los usuarios. 
->>##### URL : http://localhost:4000/api/user 
+>
+> > #### Este te muestra todos los usuarios.
+> >
+> > ##### URL : http://localhost:4000/api/user
+
+---
 
 > #### GET/ + TOKEN :
->>#### Este te devuelve tu usuario propio, en la cabecera debes de pasarle el token.
->>##### URL : http://localhost:4000/api/user
->>##### Header: token
+>
+> > #### Este te devuelve tu usuario propio, en la cabecera debes de pasarle el token.
+> >
+> > ##### URL : http://localhost:4000/api/user
+> >
+> > #### Header: token
+
+---
 
 > #### POST/ :
->>#### Este crea un usuario.
->>##### URL : http://localhost:4000/api/user
+>
+> > #### Este crea un usuario :
+> >
+> > - user,
+> > - username,
+> > - email,
+> > - password
+> >
+> > ##### URL : http://localhost:4000/api/user
+
+---
 
 > #### PUT/ + TOKEN :
->>#### Este actualiza un usuario en especifico, en la cabecera debes de pasarle el token.
->>##### URL : http://localhost:4000/api/user
->>##### Header: token
+>
+> > #### Este actualiza un usuario en especifico, en la cabecera debes de pasarle el token.
+> >
+> > ##### URL : http://localhost:4000/api/user
+> >
+> > #### Header: token
+
+---
 
 > #### DELETE/ + TOKEN :
->>#### Elimina un usuario en especifico , en la cabecera debes de pasarle el token.
->>##### URL : http://localhost:4000/api/user
->>##### Header: token
+>
+> > #### Elimina un usuario en especifico , en la cabecera debes de pasarle el token.
+> >
+> > ##### URL : http://localhost:4000/api/user
+> >
+> > #### Header: token
 
+---
 
-### AUTH : 
-
+### AUTH :
 
 > #### GET/ :
->>####  Este te muestra todos los usuarios authrntificados. 
->>##### URL : http://localhost:4000/api/auth 
+>
+> > #### Este te muestra todos los usuarios authrntificados.
+> >
+> > ##### URL : http://localhost:4000/api/auth
+
+---
 
 > #### POST/ + TOKEN :
->>#### Este te devuelve el token cuando haces el logueo exitoso.        
->>##### URL : http://localhost:4000/api/auth
->>##### Header: token
+>
+> > #### Este te devuelve el token cuando haces el logueo exitoso.
+> >
+> > ##### URL : http://localhost:4000/api/auth
+> >
+> > - email
+> > - password
+> >
+> > #### Header: token
 
+---
 
-# Author : 
+# Author :
 
-[ David Prada Linarez ](https://www.facebook.com/profile.php?id=100008192493464)
+- [ David Prada Linarez ](https://www.facebook.com/profile.php?id=100008192493464)
 
-@davichois
+- @davichois

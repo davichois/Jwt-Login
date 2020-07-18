@@ -1,12 +1,15 @@
 const express = require("express");
+const cors = require("cors");
 const config = require("config");
 const auth = require("./components/auth/authRoutes");
 const user = require("./components/user/userRoutes");
 
 const app = express();
 
+//Middlewares
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.use(cors());
 
 //Routes
 app.use("/api/user", user);
